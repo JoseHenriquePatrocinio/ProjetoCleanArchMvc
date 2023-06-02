@@ -18,10 +18,11 @@ namespace EntradaDeDados
             string d = Console.ReadLine();
             Console.WriteLine("Saida:" + d);
 
-       
+            int n1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Saida:" + n1);
 
-
-
+            char ch = char.Parse(Console.ReadLine());
+            Console.WriteLine("Saida:" + ch);
         }
     }
 }
