@@ -38,3 +38,5 @@ indetação VS ctrl + k + d
 overflow acontece quando o valor passa do limite da váriavel
 quando acontece um overflow a variavel muda para o limite oposto
 
+conversao implicita entre tipos
+casting conversao explicita entre tipos compativeis
