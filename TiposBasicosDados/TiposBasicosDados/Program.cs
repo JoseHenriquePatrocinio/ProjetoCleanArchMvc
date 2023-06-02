@@ -27,6 +27,9 @@ namespace TiposDadosBasicos
             Console.WriteLine(n4);
             Console.WriteLine(n5);
             Console.WriteLine(n6);
+
+
+
             
 
 
