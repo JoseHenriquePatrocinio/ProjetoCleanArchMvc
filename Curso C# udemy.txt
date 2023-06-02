@@ -40,3 +40,7 @@ quando acontece um overflow a variavel muda para o limite oposto
 
 conversao implicita entre tipos
 casting conversao explicita entre tipos compativeis
+
+escopo de uma váriavel é a região do programa onde a variável é válida 
+ou seja onde ela pode ser referenciada
+
