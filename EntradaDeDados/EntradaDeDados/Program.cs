@@ -18,7 +18,7 @@ namespace EntradaDeDados
             string d = Console.ReadLine();
             Console.WriteLine("Saida:" + d);
 
-            string s = Console.ReadLine();
+       
 
 
 
