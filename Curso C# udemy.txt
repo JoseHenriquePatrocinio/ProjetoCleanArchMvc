@@ -1,0 +1,31 @@
+c# é uma linguagem de programação;
+
+.net é um plataforma de desenvolvimento para se criar diversos tipos de aplicações,
+podendo usar várias linguagens de programação;
+- visual basic
+- c#
+- f#
+
+BCL  (base class library) - bibliotecas que são disponibilizadas pelo .net
+CLR (common language runtime)  - Máquina virtual, também possui garbage collection 
+
+.net standart 
+> .net framework(windows)
+	> mono (multiplataforma) 
+		> xamarin(mobile,MACios) 
+			> .net core
+
+todas possuem a BCL porem dependendo da implementação vai ter frameworks diferentes
+
+linguagens compiladas C,C++
+linguagens interpretadas PHP,JavaScript
+linguagens pré compiladas + máquina virtual Java, C# 
+*Não é preciso recompilar quando rodar em diferentes plataformas
+
+Estrutura aplicação .net:
+composta por grupos de classes que são armazenadas em namespaces que é um agrupamento
+lógico de classes relacionadas
+
+assembly (dll ou exe) = agrupamento fisico de classes relacionadas (build)
+
+aplicação ~ Solution agrupamento dos assemblys ~ project
