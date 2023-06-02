@@ -29,3 +29,12 @@ lógico de classes relacionadas
 assembly (dll ou exe) = agrupamento fisico de classes relacionadas (build)
 
 aplicação ~ Solution agrupamento dos assemblys ~ project
+
+class é a unidade básica da programação orientada a objetos;
+entry point é onde inicia o programa
+
+indetação VS ctrl + k + d
+
+overflow acontece quando o valor passa do limite da váriavel
+quando acontece um overflow a variavel muda para o limite oposto
+
