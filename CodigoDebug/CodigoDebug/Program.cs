@@ -5,13 +5,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Exemplo de operadores lógicos
+        
         bool a = true;
         bool b = false;
 
-        bool resultadoAnd = a && b; // Operador AND
-        bool resultadoOr = a || b;  // Operador OR
-        bool resultadoNot = !a;     // Operador NOT
+        bool resultadoAnd = a && b; 
+        bool resultadoOr = a || b;  
+        bool resultadoNot = !a;     
 
         Console.WriteLine("Exemplo de operadores lógicos:");
         Console.WriteLine("a AND b = " + resultadoAnd);
@@ -19,7 +19,7 @@ class Program
         Console.WriteLine("NOT a = " + resultadoNot);
         Console.WriteLine();
 
-        // Exemplo de laço de repetição while
+       
         int contador = 1;
         Console.WriteLine("Exemplo de laço de repetição while:");
         while (contador <= 5)
@@ -29,7 +29,7 @@ class Program
         }
         Console.WriteLine();
 
-        // Exemplo de laço de repetição for
+       
         Console.WriteLine("Exemplo de laço de repetição for:");
         for (int i = 1; i <= 5; i++)
         {
