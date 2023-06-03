@@ -44,3 +44,5 @@ casting conversao explicita entre tipos compativeis
 escopo de uma váriavel é a região do programa onde a variável é válida 
 ou seja onde ela pode ser referenciada
 
+para debugar um codigo no VS é usado F9 para marcar um breakpoint F5 para executar
+ e F10 para rodar passo a passo
