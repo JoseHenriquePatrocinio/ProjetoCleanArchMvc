@@ -67,3 +67,7 @@ conceito de sobrecarga é especificar mais de um construtor na mesma classe
 this é uma referencia para o próprio objeto
 referenciar outro construtor em outro
 passar o próprio objeto como argumento na chamada de um metodo ou construtor
+
+encapsulamento proteje detalhes de implementação 
+expoem apenas operacoes seguras 
+ 

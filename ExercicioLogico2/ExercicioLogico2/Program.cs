@@ -9,7 +9,7 @@ namespace ExercicioLogico2
     {
         static void Main(string[] args)
         {
-
+           
 
             Console.WriteLine("Entre os dados do produto");
 
@@ -25,6 +25,8 @@ namespace ExercicioLogico2
             Produto produto1 = new Produto();
 
             Produto produto2 = new Produto(nome = "TV", preco = 950.30, quantidade = 10);
+
+            Console.WriteLine(produto.GetNome);
 
             Console.WriteLine();
             Console.WriteLine("Dados produto: " + produto);

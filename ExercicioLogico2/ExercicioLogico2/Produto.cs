@@ -10,52 +10,55 @@ namespace ExercicioLogico2
     internal class Produto
     {
 
-        public string Nome;
-        public double Preco;
-        public int Quantidade;
+        private string _nome;
+        private double _preco;
+        private int _quantidade;
+
+        public string GetNome() { return _nome;}
+        public void SetNome(string nome) {_nome = nome;}
 
         public Produto()
         {
-            Quantidade = 10;
+            _quantidade = 10;
         }
 
         public Produto(string nome, double preco, int quantidade)
         {
-            Nome = nome;
-            Preco = preco;
-            Quantidade = quantidade;
+            _nome = nome;
+            _preco = preco;
+            _quantidade = quantidade;
         }
 
         public Produto(string nome, double preco) : this()
         {
 
-            Nome = nome;
-            Preco = preco;
-            Quantidade = 10;
+            _nome = nome;
+            _preco = preco;
+            _quantidade = 10;
         }
 
         public double ValorTotalEstoque()
         {
-            return Preco * Quantidade;
+            return _preco * _quantidade;
         }
 
         public void AddProdutoEstoque(int quantidadeUser)
         {
 
-            Quantidade += quantidadeUser;
+            _quantidade += quantidadeUser;
 
         }
 
         public void RemoveProdutoEstoque(int quantidadeUser)
         {
 
-            Quantidade -= quantidadeUser;
+            _quantidade -= quantidadeUser;
 
         }
 
         public override string ToString()
         {
-            return "Nome: " + Nome + " Preço: R$" + Preco.ToString("F2", CultureInfo.InvariantCulture) + " Unidades: " + Quantidade;
+            return "Nome: " + _nome + " Preço: R$" + _preco.ToString("F2", CultureInfo.InvariantCulture) + " Unidades: " + _quantidade;
         }
     }
 }
