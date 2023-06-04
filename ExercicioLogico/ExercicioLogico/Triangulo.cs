@@ -9,5 +9,12 @@ namespace ExercicioLogico
         public double B;
         public double C;
 
+        public double CalculaAreaTriangulo()
+        {
+            double p = (A + B + C) / 2.0;
+            return Math.Sqrt(p * (p - A) * (p - B) * (p - C));
+
+        }
+
     }
 }
