@@ -1,21 +1,26 @@
 ﻿
+using ExercicioLogico;
 using System.Globalization;
 
-double xa, xb, xc, ya, yb, yc;
+Triangulo x, y;
+
+x = new Triangulo();
+y = new Triangulo();
+
 Console.WriteLine("Entre com as medidas do triangulo x: ");
-xa = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-xb = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-xc = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 Console.WriteLine("Entre com as medidas do triangulo y: ");
-ya = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-yb = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-yc = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-double p = (xa + xb + xc) / 2.0;
-double areax = Math.Sqrt(p * (p - xa) * (p - xb) * (p - xc));
-p = (ya + yb + yc) / 2.0;
-double areay = Math.Sqrt(p * (p - ya) * (p - yb) * (p - yc));
+double p = (x.A + x.B + x.C) / 2.0;
+double areax = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+p = (y.A + y.B + y.C) / 2.0;
+double areay = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
 
 Console.WriteLine("Area de x = " + areax.ToString("F4", CultureInfo.InvariantCulture));
 Console.WriteLine("Area de y = " + areay.ToString("F4", CultureInfo.InvariantCulture));

@@ -46,3 +46,11 @@ ou seja onde ela pode ser referenciada
 
 para debugar um codigo no VS é usado F9 para marcar um breakpoint F5 para executar
  e F10 para rodar passo a passo
+ 
+ classe é um tipo estruturado que pode conter atributos e metodos
+ classe pode prover outros recursos
+ >Construtores
+	>Sobrecarga
+		>Encapsulamento
+			>Herança
+				>Polimorfismo
