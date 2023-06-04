@@ -63,3 +63,7 @@ para debugar um codigo no VS é usado F9 para marcar um breakpoint F5 para execu
 Construtor executa no momento da instanciação do objetos
 Se o contruto customizado não for especificaod a classe disponobiliza o padrao
 conceito de sobrecarga é especificar mais de um construtor na mesma classe
+
+this é uma referencia para o próprio objeto
+referenciar outro construtor em outro
+passar o próprio objeto como argumento na chamada de um metodo ou construtor

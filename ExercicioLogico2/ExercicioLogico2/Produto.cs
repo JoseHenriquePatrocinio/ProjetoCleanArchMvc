@@ -16,6 +16,7 @@ namespace ExercicioLogico2
 
         public Produto()
         {
+            Quantidade = 10;
         }
 
         public Produto(string nome, double preco, int quantidade)
@@ -25,8 +26,9 @@ namespace ExercicioLogico2
             Quantidade = quantidade;
         }
 
-        public Produto(string nome, double preco)
+        public Produto(string nome, double preco) : this()
         {
+
             Nome = nome;
             Preco = preco;
             Quantidade = 10;
