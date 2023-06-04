@@ -26,7 +26,7 @@ namespace ExercicioLogico2
 
             Produto produto2 = new Produto(nome = "TV", preco = 950.30, quantidade = 10);
 
-            Console.WriteLine(produto.GetNome);
+            //Console.WriteLine(produto.GetNome);
 
             Console.WriteLine();
             Console.WriteLine("Dados produto: " + produto);
