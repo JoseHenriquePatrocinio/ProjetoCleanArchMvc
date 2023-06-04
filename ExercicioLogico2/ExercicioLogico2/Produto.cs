@@ -14,6 +14,21 @@ namespace ExercicioLogico2
         public double Preco;
         public int Quantidade;
 
+
+        public Produto(string nome, double preco, int quantidade)
+        {
+            Nome = nome;
+            Preco = preco;
+            Quantidade = quantidade;
+        }
+
+        public Produto(string nome, double preco)
+        {
+            Nome = nome;
+            Preco = preco;
+           Quantidade = 10;
+        }
+
         public double ValorTotalEstoque()
         {
             return Preco * Quantidade;

@@ -10,15 +10,15 @@ namespace ExercicioLogico2
         static void Main(string[] args)
         {
 
-            Produto produto = new Produto();
+           
+            Console.WriteLine("Entre os dados do produto");
 
-            Console.WriteLine("Entre os dados do produto: ");
             Console.Write("Nome: ");
-            produto.Nome = Console.ReadLine();
+            string nome = Console.ReadLine();
             Console.Write("Preço: ");
-            produto.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.Write("Quantidade em estoque: ");
-            produto.Quantidade = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Produto produto = new Produto(nome, preco);
 
             Console.WriteLine();
             Console.WriteLine("Dados produto: " + produto);
