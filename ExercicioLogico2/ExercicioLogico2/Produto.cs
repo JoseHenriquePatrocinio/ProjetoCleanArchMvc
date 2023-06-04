@@ -14,6 +14,9 @@ namespace ExercicioLogico2
         public double Preco;
         public int Quantidade;
 
+        public Produto()
+        {
+        }
 
         public Produto(string nome, double preco, int quantidade)
         {
@@ -26,7 +29,7 @@ namespace ExercicioLogico2
         {
             Nome = nome;
             Preco = preco;
-           Quantidade = 10;
+            Quantidade = 10;
         }
 
         public double ValorTotalEstoque()
