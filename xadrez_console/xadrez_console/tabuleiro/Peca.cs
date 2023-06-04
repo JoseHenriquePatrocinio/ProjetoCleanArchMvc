@@ -2,7 +2,7 @@
 
 namespace tabuleiro
 {
-    class Peca
+    abstract class Peca
     {
 
         public Posicao posicao { get; set; }
@@ -17,9 +17,10 @@ namespace tabuleiro
             this.qtdeMovimentos = 0;
         }
 
-        public void incrementarQtdeMovimentos()
-        {
-            qtdeMovimentos++;
-        }
+        public abstract bool[,] movimentosPossiveis();
+        
+
+        
+        
     }
 }
