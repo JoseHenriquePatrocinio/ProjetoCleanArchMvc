@@ -33,10 +33,14 @@ aplicação ~ Solution agrupamento dos assemblys ~ project
 class é a unidade básica da programação orientada a objetos;
 entry point é onde inicia o programa
 
-indetação VS ctrl + k + d
+identação VS ctrl + k + d
 
 overflow acontece quando o valor passa do limite da váriavel
 quando acontece um overflow a variavel muda para o limite oposto
+
+Quando não é necessário fazer uso aritmético de variaveis 
+por exemplo cpf, pode ser armazenadas em String para garantir que todos
+os digitos estejam na variavel;
 
 conversao implicita entre tipos
 casting conversao explicita entre tipos compativeis
