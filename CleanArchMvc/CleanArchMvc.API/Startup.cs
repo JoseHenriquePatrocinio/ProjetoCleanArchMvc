@@ -1,3 +1,5 @@
+using CleanArchMvc.Application.Interfaces;
+using CleanArchMvc.Application.Services;
 using CleanArchMvc.Infra.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +34,8 @@ namespace CleanArchMvc.API
         {
             services.AddInfrastructureAPI(Configuration);
             services.AddControllers();
+            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IProductService, ProductService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CleanArchMvc.API", Version = "v1" });
@@ -57,6 +61,7 @@ namespace CleanArchMvc.API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+
             });
         }
     }

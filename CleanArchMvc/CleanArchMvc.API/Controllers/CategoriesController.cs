@@ -1,7 +1,5 @@
 ﻿using CleanArchMvc.Application.DTOs;
 using CleanArchMvc.Application.Interfaces;
-using CleanArchMvc.Domain.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -30,7 +28,7 @@ namespace CleanArchMvc.API.Controllers
             return Ok(categories); //status 200
         }
 
-        [HttpGet("{id:int", Name = "GetCategory")]
+        [HttpGet("{id:int}", Name = "GetCategory")]
         public async Task<ActionResult<CategoryDTO>> Get(int id)
         {
             var category = await _categoryService.GetById(id);
@@ -71,14 +69,14 @@ namespace CleanArchMvc.API.Controllers
         public async Task<ActionResult<CategoryDTO>> Delete(int id)
         {
             var category = await _categoryService.GetById(id);
-            if(category == null)
+            if (category == null)
             {
                 return NotFound("Category not found");
             }
             await _categoryService.Remove(id);
 
             return Ok(category);
-        } 
+        }
 
     }
 }
